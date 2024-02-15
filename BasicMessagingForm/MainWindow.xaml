@@ -1,0 +1,106 @@
+﻿<Window x:Class="BasicMessagingForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        Title="Basic Messaging Form (.Net 4.8 WPF MSMQ)" Height="350" Width="500">
+    <TabControl>
+        <TabItem Name="Settings">
+            <TabItem.Header>
+                <Label Content="Settings" HorizontalAlignment="Stretch"/>
+            </TabItem.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70" />
+                    <ColumnDefinition Width="21*" />
+                    <ColumnDefinition Width="403*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Label Content="_Username:" Target="{Binding ElementName=textbox_username}" HorizontalAlignment="Center" />
+                <TextBox x:Name="textbox_username" Width="100px" MaxLength="30" VerticalContentAlignment="Center" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="0" 
+                         Text="Default" TextChanged="textbox_username_TextChanged" Grid.ColumnSpan="2" />
+            </Grid>
+        </TabItem>
+        <TabItem Name="Chat">
+            <TabItem.Header>
+                <Label Content="Chat" MouseLeftButtonDown="tabChat_Clicked" HorizontalAlignment="Stretch"/>
+            </TabItem.Header>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*" />
+                    <RowDefinition Height="1*" MaxHeight="30" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="1*" MaxWidth="200" />
+                    </Grid.ColumnDefinitions>
+                    <GridSplitter />
+                    <RichTextBox x:Name="textarea_console" Grid.Column="0" IsReadOnly="True" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    <ListView x:Name="list_chatmembers" Grid.Column="1" IsEnabled="False" />
+                </Grid>
+                <Grid Grid.Row="1" MaxHeight="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="textbox_send" Grid.Column="0" Margin="1"/>
+                    <Button x:Name="button_send" Grid.Column="1" Margin="1" Click="button_send_Click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                        <Button.Content>
+                            <TextBlock Text="Send"/>
+                        </Button.Content>
+                    </Button>
+                </Grid>
+            </Grid>
+        </TabItem>
+        <TabItem Name="About">
+            <TabItem.Header>
+                <Label Content="About" MouseLeftButtonDown="tabChat_Clicked" HorizontalAlignment="Stretch"/>
+            </TabItem.Header>
+            <StackPanel x:Name="panel_about">
+                <TextBlock HorizontalAlignment="Center" Text="About" FontSize="16" FontWeight="Bold" TextDecorations="Underline" />
+                <TextBlock Text="This is a small WPF application meant to demonstrate basic skills with WPF and MSMQ." FontWeight="Bold"/>
+                <TextBlock Text="MSMQ is utilized to handle communication between applications." FontWeight="Bold"/>
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Major Skills" Width="{Binding ActualWidth, ElementName=panel_about}"/>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.Items>
+                        <ListViewItem>.Net Standard (4.8), MSMQ</ListViewItem>
+                        <ListViewItem>WPF, C#</ListViewItem>
+                    </ListView.Items>
+                </ListView>
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Minor Skills" Width="{Binding ActualWidth, ElementName=panel_about}"/>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.Items>
+                        <ListViewItem>DataBinding, Queues</ListViewItem>
+                        <ListViewItem>Threading, Garbage Collection, Thread Safety</ListViewItem>
+                    </ListView.Items>
+                </ListView>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+
+</Window>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BasicMessagingForm.exe" version="1.0.0.6" publicKeyToken="29f392926ccbee68" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BasicMessagingForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BasicMessagingForm.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BasicMessagingForm.exe" size="91704">
+      <assemblyIdentity name="BasicMessagingForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Qyr7TVVb2aXDiAbIatC0I8KAHm8nZRGZA9nNNlDNhlk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BasicMessagingForm.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-DJUCDQU\BLUEMAGIC SE GAMING" issuerKeyHash="93cbbbcc487e2b08d81221a1921bb97006b64f3a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zZseHm0DDhsAI20qQGS7DVLKOaMkWicuhWGRk9BoUHM=</DigestValue></Reference></SignedInfo><SignatureValue>Y0B9FKHPdYPi6C0wgZZly9JDkRlqh0nie3jnx7BPzLc0jSpwXNCUUZV30xelD+7/KfCEFSJ2LOz/ZyX+QqkySt6TQJlPIZ6Gh0IT7ZX/duMnvN1AEZ1b8NYZYS4wyVtgC0i+Tfawhqugo7h5ujxXnGogVWqvAYCo3Jgi6ZQL9yo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2O2CyouxjNUsJdN4I356yZ2wjswjUoAwmRFNfEVu4tAmCH/M8xrPbNJ4TpK8tMrjUZpwtIf0kY7P6VwINzuGzCivG7bIIkCHl+PfKKqnIze6wC8n7Jyp2J3kBlyCdurhaE9NcqoWv9IXDQlo++r9/r8WYA0+0ktdhGobpV9W1Wk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="735068d0939161852e275a24a339ca520dbb64402a6d23001b0e036d1e1e9bcd" Description="" Url=""><as:assemblyIdentity name="BasicMessagingForm.exe" version="1.0.0.6" publicKeyToken="29f392926ccbee68" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-DJUCDQU\BLUEMAGIC SE GAMING</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9E9cvovNvXhCcjwgI2om/340MhgP/vg/A5AItDtnThU=</DigestValue></Reference></SignedInfo><SignatureValue>xXSuer8yQOJelLWA0y1inT25sHxQ+D/Ev7TN827S7poyi+HPXdGgbjrCCebCBmGAdglIArymCwuaD0Pth0kI9mbAgDhjkMZabNKzWC75bE4q1YqnKZDUoONGyKKtsokivCXbBs5dXgLQYdgoFLeAMBc4GH1kcgPSDnXrzGNc3UU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2O2CyouxjNUsJdN4I356yZ2wjswjUoAwmRFNfEVu4tAmCH/M8xrPbNJ4TpK8tMrjUZpwtIf0kY7P6VwINzuGzCivG7bIIkCHl+PfKKqnIze6wC8n7Jyp2J3kBlyCdurhaE9NcqoWv9IXDQlo++r9/r8WYA0+0ktdhGobpV9W1Wk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICJTCCAY6gAwIBAgIQcV5H8W98K5xFajmgL2p1bjANBgkqhkiG9w0BAQsFADBRMU8wTQYDVQQDHkYARABFAFMASwBUAE8AUAAtAEQASgBVAEMARABRAFUAXABCAEwAVQBFAE0AQQBHAEkAQwAgAFMARQAgAEcAQQBNAEkATgBHMB4XDTI0MDEzMDA3MjcyMloXDTI1MDEyOTEzMjcyMlowUTFPME0GA1UEAx5GAEQARQBTAEsAVABPAFAALQBEAEoAVQBDAEQAUQBVAFwAQgBMAFUARQBNAEEARwBJAEMAIABTAEUAIABHAEEATQBJAE4ARzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2O2CyouxjNUsJdN4I356yZ2wjswjUoAwmRFNfEVu4tAmCH/M8xrPbNJ4TpK8tMrjUZpwtIf0kY7P6VwINzuGzCivG7bIIkCHl+PfKKqnIze6wC8n7Jyp2J3kBlyCdurhaE9NcqoWv9IXDQlo++r9/r8WYA0+0ktdhGobpV9W1WkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBlg66YVrokDSytI8ZubDjyB2Jq7O62gHunex1qpKOK6tWwiWOdzPpzMRWIng4Sr3hojdzIaEWl0NFFvTa/HbHzTbZOS4zrMoipolO6A8E/RXW7XIOeOTPl4Q+VGLJp1DJXALWfeOYfgUBa+GJe81W5cusE9K9QrrkNbyOKmESEOA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
