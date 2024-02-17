@@ -20,7 +20,6 @@ namespace BasicMessagingForm
     public partial class MainWindow : Window
     {
         private MSMQManager manager_msmq;
-        private MSMQFileClient fileclient_msmq;
 
         private String username = "Default";
         private bool _disposed = false;
@@ -37,7 +36,6 @@ namespace BasicMessagingForm
             InitializeComponent();
 
             manager_msmq = new MSMQManager("BasicMessagingForm_");
-            fileclient_msmq = new MSMQFileClient();
         }
 
         ~MainWindow()
